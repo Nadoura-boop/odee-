@@ -1,0 +1,110 @@
+*{
+    text-decoration: none;
+    
+   
+    list-style: none;
+   
+
+}
+
+body
+{
+   background-image: url(ne.png);
+   background-size: cover;
+   /* background-repeat: no-repeat; */
+   background-attachment: fixed;
+   
+   color: white;
+}
+
+a{
+    color: rgb(226, 250, 255);
+}
+
+ul{
+ display: flex;
+ gap: 2em;
+ padding-inline-start:200px;
+ margin-left: 150px;
+ margin-top:10px ;
+ font-family: "Passion One", sans-serif;
+ font-weight: 100;
+ font-style: normal;
+ font-size:40px ;   
+ 
+ 
+  }
+  li{
+    position: relative;
+  }
+  li::after{
+   content: "";
+   position:absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   background-color: #fffcfc;
+   border-radius: 1000px;
+   transform: scaleX(0);
+   transition: transform 0.35s ease-out;
+  }
+  li:hover::after
+  {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+#odee{
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    text-shadow: 2px 3px 6px black ;
+    color: #bb5c20;
+
+}
+.coffee{
+font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  position: absolute;
+  left: 160px;
+  top: 80px;
+
+
+}
+.in{
+    font-family: "Passion One", sans-serif;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    top:100px; 
+    /* border: solid#bb5c20 3px; */
+    padding: 2dvh;
+    
+
+}
+
+button{
+    position: absolute;
+    top:350px;
+    left: 220px;
+    
+    color: black;
+    width: 230px;
+    height: 50px;
+    right: 250px;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 100px;
+    background-color:#bb5c20;
+    border: 0;
+    box-shadow: 2px 2px  5px black;
+   
+}
